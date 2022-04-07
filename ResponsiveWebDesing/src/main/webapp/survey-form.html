@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+	body{
+		text-align:center;
+		align-content: center;
+    font-family: 'Poppins', sans-serif;
+	}
+.container{
+    text-align:center;
+    width: 80%;
+}
+	form{
+		background: #001100;
+		color: #ffffff;
+    display: block;
+    max-width: 90%;
+    margin-top: 0em;
+
+	}
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+</style>
+<title>Survey form</title>
+</head>
+<body>
+  <main id="main">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+      <form id="survey-form" action="">
+        <div class="form-group">
+        <label id="name-label" for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name" required/> 
+        </div>
+        <div class="form-group">
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" placeholder="Example: you@email.com" required/>
+        </div>
+        <div class="form-group">
+        <label for="number" id="number-label">Number: </label>
+        <input type="number" id="number" placeholder="125634" min="1" max="300" required/>
+        </div>
+        <div class="form-group">
+       <label for="dropdown" id="dropdown-label">Select an option: </label>
+        <select id="dropdown">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label>Choose another option</label>
+        <input name="select_radio" type="radio" value="one">One
+        <input name="select_radio" type="radio" value="two">Two
+        </div>
+        <div class="form-group">
+        <label>Select more than one option:</label>
+        <input name="select_checkbox" type="checkbox" value="one-check">One checked
+       <input name="select_checkbox" type="checkbox" value="two-check">Two checked 
+        <input name="select_checkbox" type="checkbox" value="three-check">Three checked
+        </div>
+        <div class="form-group">
+        <label>Aditional comments:</label>
+        <textarea></textarea>
+        </div>  
+        <input type="submit" id="submit" label="Send"/>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
