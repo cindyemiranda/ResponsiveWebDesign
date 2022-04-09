@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>My personal portfolio</title>
+    <style type="text/css">
+    	ul{
+		  list-style: none;
+		}
+		projects-grid{
+		  display:grid;
+		}
+		#welcome-section{
+		  height: 100vh;
+		}
+		#navbar{
+		  text-align: right;
+		  position: fixed;
+		  top: 0;
+		  width: 90%;
+		  margin-right: 200px;
+		}
+		@media (width-min: 800px){
+		  #welcome-section{
+		    max-height: 200px;
+		  }
+		}
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#welcome-section">About</a></li>
+       <ul>
+       
+    </nav>
+    <section id="welcome-section">
+      <h1>Hey I am Mimic</h1>
+    </section>
+    <section id="projects">
+      <div class="projects-grid">
+        <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+        <a class="project-tile">Proyecto 1</a>
+      </div>
+    </section>
+    <section id="contact-links">
+      
+      <a id="profile-link" href="https://github.com/cindyemiranda" target="_blank">Github</a>
+     </section>
+  </body>
+</html>
